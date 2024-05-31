@@ -1,4 +1,4 @@
-const TimeStampUtil = (value) => {
+const TimeStampUtil = (value: number | string | Date): string => {
   const date = new Date(value);
 
   const convertTimeStamp = `${date.getFullYear()}-${(date.getMonth() + 1)
